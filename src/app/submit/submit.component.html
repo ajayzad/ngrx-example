@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="heading">
+        <span>Submit Form</span>
+    </div>
+    <div class="firm">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="grid1">
+                <div class="common">
+                    <span>First Name</span>
+                    <input type="text" placeholder="Enter first name" formControlName="firstName">
+                </div>
+                <div class="common">
+                    <span>Last Name</span>
+                    <input type="text" placeholder="Enter last name" formControlName="lastName">
+                </div>
+            </div>
+
+            <div class="grid2">
+                <div class="common">
+                    <span>Email Address</span>
+                    <input type="text" placeholder="Enter Email Address" formControlName="email">
+                </div>
+                <div class="common">
+                    <span>Date of Birth</span>
+                    <input type="date" placeholder="Enter DOB" formControlName="dob">
+                </div>
+            </div>
+
+            <div class="grid3">
+                <div class="common2">
+                    <span>Address</span>
+                    <textarea placeholder="Enter your Address" formControlName="address"></textarea>
+                </div>
+            </div>
+
+            <div class="grid4">
+                <button>Submit Form</button>
+            </div>
+        </form>
+    </div>
+</div>
